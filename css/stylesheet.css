@@ -1,0 +1,226 @@
+@charset "UTF-8";
+@import "https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700";
+body {
+	font-family: "Open Sans", Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	font-weight: 400;
+	margin: 0;
+	padding: 0;
+	background-color: #f7f8f9;
+	color: #434951;
+}
+a {
+	text-decoration: none;
+	color: #f39c12;
+	font-weight: 600;
+}
+.container {
+	width: 80%;
+	margin: 0 auto;
+	padding: 0;
+}
+/*START HEADER*/
+.header-bg {
+	background-color: #434951;
+	width: 100%;
+}
+.header-nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: row;
+	width: 80%;
+	margin: 0 10%;
+}
+.logo {
+	width: 25%;
+	min-width: 250px;
+	max-width: 600px;
+	margin: 8px 10px 5px 0;
+}
+.logo img {
+	width: 100%;
+}
+.header-nav-list {
+	margin: 0px;
+	font-size: 0.85em;
+}
+.header-nav-list ul{
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+	overflow: hidden;
+}
+.header-nav-list li {
+	display: inline-block;
+}
+.header-nav-list a:hover {
+	background-color: #f39b12;
+	text-decoration: underline;
+}
+.header-nav-list li:last-child {
+	margin-right: 0;
+}
+.header-nav-list a{
+    color: #f7f8f9;
+	display: block;
+	padding: 14px 16px;
+	height: 100%;
+    text-decoration: none;
+	align-self: center;
+}
+#nav-current {
+	font-weight: 800;
+	color: #f39b12;
+}
+.drop-content {
+    display: none;
+    position: absolute;
+    background-color: #ebeff1;
+	list-style-type: none;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	overflow: auto;
+	margin: 0;
+	padding: 0;
+}
+.drop-content a {
+	color: #434951;
+    padding: 12px 16px;
+    text-decoration: none;
+	list-style-type: none;
+    display: block;
+}
+.drop-content li {
+	display: block;
+}
+.dropdown:hover .dropbtn {
+    background-color: #f39b12;
+}
+.drop-content  a:hover {
+	background-color: #f7f8f9;
+}
+.dropdown:hover .drop-content {
+	display: block;
+	z-index: 5;
+}
+#nav-current:hover {
+	color: #f7f8f9;
+}
+/* END HEADER */
+/*START WELCOME IMAGE*/
+.hp-img-container {
+	width: 100%;
+	position: relative;
+}
+.hp-sunrise-img {
+	width: 100%;
+	z-index: -1;
+}
+.sunrise-img-overlay {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	
+}
+.welcome-quote {
+	font-size: 1.75em;
+	font-weight: 100;
+	font-style: italic;
+	line-height: 0;
+	margin-bottom: 14%;
+	margin-top: 20%;
+}
+.welcome-contact {
+	color: #FFF;
+	font-size: 1.1em;
+	display: inline-block;
+	padding: 12px 48px;
+	border: 2px solid #FFF;
+	text-decoration: none;
+	font-weight: 400;
+	margin-top: 7.5%;
+	margin-bottom: 5%
+}
+.welcome-contact:hover {
+	background-color: rgba(225,225,225,0.25);
+}
+.down-arrow {
+	width: 36px;
+	display: inline-block;
+	margin-bottom: 25%;
+}
+/* END WELCOME IMAGE */
+/* START INTRO CONTENT */
+.intro {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+	padding: 10px 0;
+	margin: 0;
+}
+.intro h2{
+	text-align: center;
+	font-weight: 400;
+	font-size: 1.6em;
+	margin: 0;
+	padding: 10px;
+}
+.intro p {
+	font-size: 1.15em;
+	font-weight: 400;
+}
+
+.intro-video-bg {
+	background-color: #F39B12;
+	padding: 0;
+	display: flex
+}
+.intro-video {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.intro-video iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+/* END INTRO CONTENT */
+
+@media (min-width: 1235px){ /*For big screens. Navbar can have 10% borders with links & logo still fitting*/
+}
+
+@media (max-width: 1234px){ /*For medium screens, Navbar fully extends with no borders, but all links and logo still fit.*/
+	.header-nav {
+		width: 100%;
+		margin: 0;
+	}
+	.logo {
+		width: 20%;
+		margin: 12px 10px 8px 10px;
+	}
+}
+
+@media (max-width: 997px){ /*For medium-er screens, Navbar and logo have to go on seperate lines, but the navbar can still fit as one row.*/
+	.header-nav {
+		flex-direction: column;
+	}
+}
+
+@media (max-width: 726px){
+}

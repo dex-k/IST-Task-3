@@ -1,0 +1,41 @@
+@charset "UTF-8";
+/* Non-specific CSS */
+html {
+	font-family: 'Roboto', sans-serif;
+}
+
+body {
+	background-image: url(../media/nebula.jpg);
+	background-size: 1440px;
+	padding: 0;
+	margin: 0;
+}
+
+h1 {
+}
+
+p {
+}
+
+/* Class & ID specific CSS */
+.content-border {
+	position: fixed;
+	border: 5px rgba(255,255,255,0.5) solid;
+	margin: 15px;
+	padding: 5px;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+.content {
+	position: relative;
+	padding: 10px;
+	background-color: rgba(255,255,255,0.5);
+	width: 100%;
+	height: 100%;
+}
+
+.heading {
+	text-align: center;
+	margin: 0;
+}
