@@ -86,9 +86,6 @@ a {
     display: block;
     text-align: left;
 }
-.drop-content li {
-	display: block;
-}
 .dropdown:hover .dropbtn {
 .header-nav-list a:hover, .dropdown:hover .dropbtn {
     background-color: #f39b12;
