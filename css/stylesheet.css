@@ -90,6 +90,9 @@ a {
 	list-style-type: none;
     display: block;
 }
+.drop-content li {
+	display: block;
+}
 .dropdown:hover .dropbtn {
     background-color: #f39b12;
 }
