@@ -21,6 +21,7 @@ a {
 /*START HEADER*/
 .header-bg {
 	background-color: #434951;
+	width: 100%;
 }
 .header-nav {
 	display: flex;
@@ -50,7 +51,6 @@ a {
 	overflow: hidden;
 }
 .header-nav-list li {
-	float: left;
 	display: inline-block;
 }
 .header-nav-list a:hover {
@@ -69,25 +69,28 @@ a {
 	align-self: center;
 }
 #nav-current {
-	font-weight: bold;
+	font-weight: 800;
 	color: #f39b12;
 }
 .drop-content {
     display: none;
     position: absolute;
     background-color: #ebeff1;
+	list-style-type: none;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	overflow: auto;
+	margin: 0;
+	padding: 0;
 }
 .drop-content a {
 	color: #434951;
     padding: 12px 16px;
     text-decoration: none;
+	list-style-type: none;
     display: block;
-    text-align: left;
 }
 .dropdown:hover .dropbtn {
-.header-nav-list a:hover, .dropdown:hover .dropbtn {
     background-color: #f39b12;
 }
 .drop-content  a:hover {
@@ -95,7 +98,6 @@ a {
 }
 .dropdown:hover .drop-content {
 	display: block;
-    display: block;
 	z-index: 5;
 }
 #nav-current:hover {
@@ -172,6 +174,7 @@ a {
 	font-size: 1.15em;
 	font-weight: 400;
 }
+
 .intro-video-bg {
 	background-color: #F39B12;
 	padding: 0;
